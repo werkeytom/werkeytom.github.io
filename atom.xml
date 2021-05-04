@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-05-04T11:03:09.547Z</updated>
+  <updated>2021-05-04T11:10:53.980Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,14 +21,12 @@
     <link href="http://example.com/2021/05/04/test/"/>
     <id>http://example.com/2021/05/04/test/</id>
     <published>2021-05-04T11:01:54.000Z</published>
-    <updated>2021-05-04T11:03:09.547Z</updated>
+    <updated>2021-05-04T11:10:53.980Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>摘要<br>首页显示摘要内容（替换成自己的）</p></blockquote><span id="more"></span><p>正文内容（替换成自己的）</p><p>参考文章:<br><a href="">参考链接</a></p>]]></content>
+    <content type="html"><![CDATA[<p>这是一篇测试文章</p><span id="more"></span><p>算了，我亲自杀你吗。</p>]]></content>
     
     
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;摘要&lt;br&gt;首页显示摘要内容（替换成自己的）&lt;/p&gt;
-&lt;/blockquote&gt;</summary>
+    <summary type="html">&lt;p&gt;这是一篇测试文章&lt;/p&gt;</summary>
     
     
     
