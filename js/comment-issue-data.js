@@ -11,7 +11,7 @@ var COMMENT_CACHE_KEY = "commentKey";
 var valine;
 
 // 管理员名称,评论时添加 [博主] 后缀
-var ADMIN_NAME = "removeif";
+var ADMIN_NAME = "werkeytom";
 
 function ajaxReqForGitHub(url, authorizationToken, call) {
     $.ajax({
@@ -50,6 +50,7 @@ function writeHtmlValineCommentCountValueById(id, valine) {
     // page comment count
     valine.Q(id).count().then(function (count) {
         $("#" + md5(id)).html(count);
+        //$("#" + md5(id)).html(18);
     });
 }
 
@@ -180,8 +181,7 @@ function renderCommentData(COMMENT_ARR) {
             htmlContentWidget +=
                 "<div class='card-comment-item'>" + 
                     "<a href=\"" + item.userUrl + "\"target=\"_blank\">" + 
-                        "<img class='ava' src='" + item.userAvatar + "  onerror='this.onerror = null;this.src=\"https://cdn.jsdelivr.net/npm/gitalk@1/src/assets/icon/github.svg\";' '/>
-                    </a>" +
+                    "<img class='ava' src='" + item.userAvatar + "'  onerror='this.onerror = null;this.src=\"https://cdn.jsdelivr.net/npm/gitalk@1/src/assets/icon/github.svg\";' /></a>" +
                     "<div class='item-header-text'><a href='" + item.userUrl + "' target='_blank'>" + item.userName + "</a>&nbsp;发表于" + getDateDiff(new Date(item.date).getTime()) + "</div>" + "<div class=\"item-text\"><a href =\"" + item.url + '#comment-container\">' + contentStr + "</a></div>" +
                 "</div>";
         }
@@ -289,7 +289,7 @@ function loadIssueData(appId, appKey, userName, userRepo, isValine) {
                         appId: appId,
                         appKey: appKey,
                         placeholder: '留下您的高见！',
-                        avatar: 'mp',
+                        avatar: "mp",
                         avatarForce: false,
                         meta: ["nick", "mail", "link"],
                         pageSize: 10,
